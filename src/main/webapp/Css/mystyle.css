@@ -1,0 +1,40 @@
+@charset "UTF-8";
+*{
+	padding: 0;
+	margin:0;
+}
+.primary-background{
+	background:#673ab7 !important;
+	
+} 
+.banner-background{
+	clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 98%, 68% 92%, 33% 98%, 0 89%, 0 0);
+}
+
+
+#myP{
+ text-align:center;
+ margin:50px 50px;
+ }
+
+body {
+  text-align: center;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+.letterhead {
+      border-bottom: 2px  #000;
+      padding: 20px;
+    }
+    .logo {
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .logo-text:first-child {
+      color: #0066cc; /* G in blue */
+    }
+    .logo-text:last-child {
+      color: #cc0000; /* W in red */
+    }

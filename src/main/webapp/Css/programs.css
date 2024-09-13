@@ -1,0 +1,60 @@
+@charset "UTF-8";
+.flowchart-step {
+            position: relative;
+            padding-bottom: 40px; /* Extra space for arrows */
+        }
+
+/*.flowchart-arrow {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 2px;
+            height: 40px;
+            background-color: #000;
+            transform: translateX(-50%);
+        }*/
+
+        
+.Vcard {
+	margin:0 auto;
+	padding:2em;
+	width:300px;
+	background:rgb(0, 0, 0);
+	text-align: center;
+	border-radius:10px;
+	position:relative;
+	color:#ffffff;
+}
+@property --angle{
+	syntax:"<angle>";
+	initial-value:0deg;
+	inherits:false;
+}
+.Vcard::after, .Vcard::before{
+	/*--angle:0deg;*/
+	content:'';
+	position:absolute;
+	height:100%;
+	width:100%;
+	/*background-image:conic-gradient(from var(--angle),transparent 90%,rgb(35, 23, 145));*/
+	/*background-image:conic-gradient(from 0deg,transparent 70%,blue);*/
+	background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+	top:50%;
+	left:50%;
+	translate: -50% -50%;
+	z-index:-1;
+	padding:3px;
+	border-radius:10px;	
+	animation: 3s spin linear infinite;
+}
+.Vcard::before{
+	filter:blur(1.5rem);
+	opacity:0.5;
+}
+@keyframes spin{
+	from{
+	--angle:0deg;
+	}to{
+	--angle:360deg;
+	}
+}

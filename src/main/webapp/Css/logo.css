@@ -1,0 +1,45 @@
+ .logo {
+            width: 100px; 
+            height: 50px; 
+            background: white;
+            border-radius: 10px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: absolute; 
+            top: 20px; 
+            left: 20px; 
+            font-family: 'Pacifico', cursive; 
+            overflow: hidden;
+            text-align: center;
+            padding: 10px; 
+ }
+
+        .logo:before {
+            content: 'GWORK';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            background: linear-gradient(90deg, black, white, black);
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: animate 4s linear infinite;
+            font-size: 24px; 
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        @keyframes animate {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
