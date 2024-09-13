@@ -1,0 +1,1 @@
+This web application supports managing and showcasing social and economic impact projects. Developed using Java JSP and Servlets, it provides a robust platform for collaboration between startups and investors.
